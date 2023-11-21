@@ -1,5 +1,5 @@
 
--- Insere os tipos de unidade
+-- Insere os tipos de unidade na tabela T_VGS_TIPO_UNIDADE
 INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Hospital Geral');
 INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Unidade Básica de Saúde');
 INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Unidade de Saúde da Família');
@@ -11,11 +11,9 @@ INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Laboratório de Anális
 INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Centro de Referência em Saúde do Trabalhador');
 INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Clínica de Especialidades Odontológicas');
 
-------------------------------------------
--- UNIDADE
---INSERTS de unidades para tabela T_VGS_UNIDADE
----------------------------------
 
+---------------------------------
+-- Insere unidades de saude na tabela T_VGS_UNIDADE
 INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade,
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
@@ -89,8 +87,8 @@ INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade, 
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Hospital São Lucas', '1199888777', 'contato@hospitalsaolucas.com.br',
-    'saolucas456', 'Rua Joana, 987', 'SP', 'São Paulo',
+    'Hospital São Lucas', '1198879877', 'contato@hospitalsaolucas.com.br',
+    'saolucas456', 'Av. São Lucas, 987', 'SP', 'São Paulo',
     1, '7654321', '76543210'
 );
 
@@ -114,75 +112,48 @@ INSERT INTO T_VGS_UNIDADE (
 
 
 ------------------------------------------
--- MEDICO
----------------------------------
+--Insere os medicos na coluna T_VGS_MEDICO 
 
-INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone,
-    id_unidade, des_email, des_senha) VALUES (
-    'Dr. João', 'Infectologista', 'SP123456', '11987654321', 1, 'joao@gmail.com', '123456joao');
-
-INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone,
-    id_unidade, des_email, des_senha) VALUES (
-    'Dr. Ana', 'Ginecologista', 'RJ789012', '21987654321', 2, 'ana@hotmail.com', 'senhaAna789');
-
-INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone,
-    id_unidade, des_email, des_senha) VALUES (
-    'Dr. Carlos', 'Cardiologista', 'PE345678', '81987654321', 4, 'carlos@email.com', 'senhaCarlos987');
-
-INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone,
-    id_unidade, des_email, des_senha) VALUES (
-    'Dra. Fernanda', 'Pediatra', 'SP567890', '11976543210', 3, 'fernanda@yahoo.com', 'senhaFernanda543');
-
-INSERT INTO T_VGS_MEDICO (
-    nom_medico, des_especialidade, num_crm, des_telefone, 
-    id_unidade, des_email, des_senha) VALUES (
-    'Dr. Marcos', 'Ortopedista', 'DF123789', '61976543210', 1, 'marcos@hotmail.com', 'senhaMarcos321');
-    
-INSERT INTO T_VGS_MEDICO (
-    nom_medico, des_especialidade, num_crm, des_telefone, 
-    id_unidade, des_email, des_senha) VALUES (
-    'Dra. Juliana', 'Dermatologista', 'MG987654', '31987654321', 5, 'juliana@gmail.com', 'senhaJuliana654'
-);
-
-INSERT INTO T_VGS_MEDICO (
-    nom_medico, des_especialidade, num_crm, des_telefone, 
-    id_unidade, des_email, des_senha) VALUES (
-    'Dr. Rafael', 'Neurologista', 'BA234567', '71987654321', 7, 'rafael@yahoo.com', 'senhaRafael876'
-);
-INSERT INTO T_VGS_MEDICO (
-    nom_medico, des_especialidade, num_crm, des_telefone, 
-    id_unidade, des_email, des_senha) VALUES (
-    'Dra. Isabella', 'Oftalmologista', 'SC456789', '47987654321', 6, 'isabella@gmail.com', 'senhaIsabella789'
-);
-
-INSERT INTO T_VGS_MEDICO (
-    nom_medico, des_especialidade, num_crm, des_telefone, 
-    id_unidade, des_email, des_senha) VALUES (
-    'Dra. Camila', 'Psiquiatra', 'SP987654', '11987654321', 6, 'camila@hotmail.com', 'senhaCamila987'
-);
-INSERT INTO T_VGS_MEDICO (
-    nom_medico, des_especialidade, num_crm, des_telefone, 
-    id_unidade, des_email, des_senha) VALUES (
-    'Dr. Guilherme', 'Otorrinolaringologista', 'RJ123789', '21976543210', 7, 'guilherme@hotmail.com', 'senhaGuilherme321'
-);
-
-INSERT INTO T_VGS_MEDICO (
-    nom_medico, des_especialidade, num_crm, des_telefone, 
-    id_unidade, des_email, des_senha) VALUES (
-    'Dra. Eduardo', 'Urologista', 'PE345678', '81987654321', 2, 'eduardo@yahoo.com', 'senhaEduardo543'
-);
-
-INSERT INTO T_VGS_MEDICO (
-    nom_medico, des_especialidade, num_crm, des_telefone, 
-    id_unidade, des_email, des_senha) VALUES (
-    'Dr. Gabriela', 'Gastroenterologista', 'DF567890', '61976543210', 4, 'gabriela@outlook.com', 'senhaGabriela654'
-);
-
-INSERT INTO T_VGS_MEDICO (
-    nom_medico, des_especialidade, num_crm, des_telefone, 
-    id_unidade, des_email, des_senha) VALUES (
-    'Dra. Lucas', 'Endocrinologista', 'MG123789', '31987654321', 5, 'lucas@gmail.com', 'senhaLucas321'
-);
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dr. João', 'Infectologia', 'SP123456', '11987654321', 1, 'joao@gmail.com', '123456joao');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone,id_unidade, des_email, des_senha) 
+    VALUES ( 'Dr. Ana', 'Ginecologia', 'RJ789012', '21987654321', 2, 'ana@hotmail.com', 'senhaAna789');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dr. Carlos', 'Cardiologia', 'PE345678', '81987654321', 4, 'carlos@email.com', 'senhaCarlos987');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone,id_unidade, des_email, des_senha)
+    VALUES ('Dra. Fernanda', 'Pediatria', 'SP567890', '11976543210', 9, 'fernanda@yahoo.com', 'senhaFernanda543');
+INSERT INTO T_VGS_MEDICO ( nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dr. Marcos', 'Ortopedia', 'DF123789', '61976543210', 1, 'marcos@hotmail.com', 'senhaMarcos321');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha)
+    VALUES ('Dra. Juliana', 'Dermatologia', 'MG987654', '31987654321', 5, 'juliana@gmail.com', 'senhaJuliana654');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dr. Rafael', 'Neurologia', 'BA234567', '71987654321', 7, 'rafael@yahoo.com', 'senhaRafael876');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dra. Isabella', 'Oftalmologia', 'SC456789', '47987654321', 6, 'isabella@gmail.com', 'senhaIsabella789');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dra. Camila', 'Psiquiatria', 'SP987654', '11987654321', 6, 'camila@hotmail.com', 'senhaCamila987');
+INSERT INTO T_VGS_MEDICO ( nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dr. Guilherme', 'Otorrinolaringologia', 'RJ123789', '21976543210', 7, 'guilherme@hotmail.com', 'senhaGuilherme321');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dra. Eduardo', 'Urologia', 'PE345678', '81987654321', 2, 'eduardo@yahoo.com', 'senhaEduardo543');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dr. Gabriela', 'Gastroenterologia', 'DF567890', '61976543210', 4, 'gabriela@outlook.com', 'senhaGabriela654');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
+    VALUES ('Dra. Lucas', 'Endocrinologia', 'MG123789', '31987654321', 5, 'lucas@gmail.com', 'senhaLucas321');
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
+    VALUES ('Dr. Ana Silva', 'Cardiologia', 'SP445567', '11944522335', 'ana.silva@gmail.com', 'senhaanasilva', 9);
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
+    VALUES ('Dr. Marcos Oliveira', 'Pediatria', 'SP754321', '11965876587', 'marcos.oliveira@hotmail.com', 'marcospediatra', 8);
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
+    VALUES ('Dra. Renata Santos', 'Dermatologia', 'SP976543', '11976554433', 'renata.santos@yahoo.com', 'senharenata789', 1);
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
+    VALUES ('Dr. Rafael Pereira', 'Ortopedia', 'SP765432', '11999532143', 'rafael.pereira@hotmail.com', 'senhapereira101', 9);
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
+    VALUES ('Dra. Camila Lima', 'Ginecologia', 'SP345678', '11996677800', 'camila.lima@gmail.com', 'senhaLima112', 1);
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
+    VALUES ('Dr. João Silva', 'Infectologia', 'SP468352', '1143425235', 'joao.silva@outlook.com', 'senha123', 1);
+INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
+    VALUES ('Dra. Maria Oliveira', 'Infectologia', 'SP219843', '9976568785', 'maria.oliveira@outlook.com', 'senha456', 8);
 
 commit;
 
