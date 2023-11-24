@@ -51,7 +51,7 @@ FOREIGN KEY (id_unidade) REFERENCES T_VGS_UNIDADE (id_unidade);
 CREATE TABLE T_VGS_DOENCA(
     id_doenca NUMBER(9) GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
     nom_doenca VARCHAR2(120) NOT NULL,
-    cod_cid_doenca VARCHAR2(2) NOT NULL,
+    cod_cid_doenca VARCHAR2(3) NOT NULL,
     des_sintomas VARCHAR2(300),
     num_taxa_transmissao NUMBER(1),
     num_taxa_letalidade NUMBER(1) NOT NULL,
