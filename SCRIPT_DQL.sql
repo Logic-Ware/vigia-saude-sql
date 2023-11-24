@@ -2,6 +2,8 @@
 SELECT * FROM T_VGS_TIPO_UNIDADE;
 SELECT * FROM T_VGS_unidade order by id_unidade;
 SELECT * FROM T_VGS_MEDICO;
+SELECT * FROM T_VGS_DOENCA;
+SELECT * FROM T_VGS_CASOS;
 
 --Objetivo: Seleciona todas as informações dos médicos cujo número de CRM começa 
 --com 'MG' e estão associados à unidade com id_unidade igual a 5
@@ -47,5 +49,13 @@ WHERE u.des_estado = 'SP'
 GROUP BY u.nom_unidade
 HAVING COUNT(*) >=3
 ORDER BY total_medicos DESC;
+
+--Objetivo: Selecionar as doenças e conta a quantidade de casos por doença
+--ordenando de modo descrecente o total de casos
+SELECT D.id_doenca, D.nom_doenca, COUNT(C.id_caso) AS total_casos
+FROM T_VGS_DOENCA D
+LEFT JOIN T_VGS_CASOS C ON D.id_doenca = C.id_doenca
+GROUP BY D.id_doenca, D.nom_doenca
+ORDER BY total_casos DESC;
 
 
