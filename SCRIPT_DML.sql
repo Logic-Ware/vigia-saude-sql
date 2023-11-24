@@ -1,15 +1,15 @@
 
 -- Insere os tipos de unidade na tabela T_VGS_TIPO_UNIDADE
 INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Hospital Geral');
-INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Unidade Básica de Saúde');
-INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Unidade de Saúde da Família');
+INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Unidade Bï¿½sica de Saï¿½de');
+INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Unidade de Saï¿½de da Famï¿½lia');
 INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Unidade de Pronto Atendimento');
 INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Hospital Especializado');
 INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Maternidade');
-INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('CAPS - Centro de Atenção Psicossocial');
-INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Laboratório de Análises Clínicas');
-INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Centro de Referência em Saúde do Trabalhador');
-INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Clínica de Especialidades Odontológicas');
+INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('CAPS - Centro de Atenï¿½ï¿½o Psicossocial');
+INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Laboratï¿½rio de Anï¿½lises Clï¿½nicas');
+INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Centro de Referï¿½ncia em Saï¿½de do Trabalhador');
+INSERT INTO T_VGS_TIPO_UNIDADE (des_tipo_unidade) VALUES ('Clï¿½nica de Especialidades Odontolï¿½gicas');
 
 
 ---------------------------------
@@ -19,30 +19,30 @@ INSERT INTO T_VGS_UNIDADE (
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade)  VALUES (
     'UPA Central','1123442355','contato@upacentral.com',
-    'central123','Av. Principal, 123', 'SP','São Paulo', 6, '1234567','12345678'
+    'central123','Av. Principal, 123', 'SP','Sï¿½o Paulo', 6, '1234567','12345678'
 );
 
 INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade,
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Instituto de Saúde Mental Brasil', '1133615681', 'contato@saude_mental.com.br',
-    'mente123', 'Rua da Serenidade, 333', 'SP', 'São Paulo',
+    'Instituto de Saï¿½de Mental Brasil', '1133615681', 'contato@saude_mental.com.br',
+    'mente123', 'Rua da Serenidade, 333', 'SP', 'Sï¿½o Paulo',
     7, '3210987', '43210987');
 
 INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade,
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Clínica Pediátrica Feliz Infância', '2134567890', 'contato@felizinfancia.com.br',
-    'pediatric123', 'Rua das Crianças, 222', 'RJ', 'Rio de Janeiro',3, '8765432', '54321098'
+    'Clï¿½nica Pediï¿½trica Feliz Infï¿½ncia', '2134567890', 'contato@felizinfancia.com.br',
+    'pediatric123', 'Rua das Crianï¿½as, 222', 'RJ', 'Rio de Janeiro',3, '8765432', '54321098'
 );
 
 INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade, 
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Unidade Básica de Saúde Santa Clara ', '81987654321', 'contato@ubssantaclara.com.br',
+    'Unidade Bï¿½sica de Saï¿½de Santa Clara ', '81987654321', 'contato@ubssantaclara.com.br',
     'ubssantaclara789', 'Rua da Comunidade, 101', 'PE', 'Recife',
     2, '2345678', '57846200'
 );
@@ -51,8 +51,8 @@ INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade, 
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Hospital Brasília', '61987654321', 'contato@hospitalbrasilia.com.br',
-    'brasilia123', 'Av. Saúde, 789', 'DF', 'Brasília',
+    'Hospital Brasï¿½lia', '61987654321', 'contato@hospitalbrasilia.com.br',
+    'brasilia123', 'Av. Saï¿½de, 789', 'DF', 'Brasï¿½lia',
     1, '9876543', '10987654'
 );
 
@@ -60,8 +60,8 @@ INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade, 
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Posto de Saúde ABC', '21967845766', 'contato@postoabc.com',
-    'posto789', 'Avenida da Saúde, 456', 'RJ', 'Rio de Janeiro',
+    'Posto de Saï¿½de ABC', '21967845766', 'contato@postoabc.com',
+    'posto789', 'Avenida da Saï¿½de, 456', 'RJ', 'Rio de Janeiro',
     2, '8765432', '21859200'
 );
 
@@ -69,7 +69,7 @@ INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade, 
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Clínica Infantil Feliz', '81999819377', 'contato@clinicainfantil.com',
+    'Clï¿½nica Infantil Feliz', '81999819377', 'contato@clinicainfantil.com',
     'feliz123', 'Rua Norma, 789', 'PE', 'Recife',
     3, '9876543', '54321000'
 );
@@ -79,7 +79,7 @@ INSERT INTO T_VGS_UNIDADE (
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
     'Hospital da Cidade', '1199888777', 'contato@hospitalcidade.com.br',
-    'cidade456', 'Av. Castelo Branco, 789', 'SP', 'São Paulo',
+    'cidade456', 'Av. Castelo Branco, 789', 'SP', 'Sï¿½o Paulo',
     1, '7654321', '54321000'
 );
 
@@ -87,8 +87,8 @@ INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade, 
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Hospital São Lucas', '1198879877', 'contato@hospitalsaolucas.com.br',
-    'saolucas456', 'Av. São Lucas, 987', 'SP', 'São Paulo',
+    'Hospital Sï¿½o Lucas', '1198879877', 'contato@hospitalsaolucas.com.br',
+    'saolucas456', 'Av. Sï¿½o Lucas, 987', 'SP', 'Sï¿½o Paulo',
     1, '7654321', '76543210'
 );
 
@@ -96,8 +96,8 @@ INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade, 
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Posto de Saúde Central', '21997776666', 'postocentral@example.com',
-    'postocentral789', 'Avenida da Saúde, 789', 'RJ', 'Rio de Janeiro',
+    'Posto de Saï¿½de Central', '21997776666', 'postocentral@example.com',
+    'postocentral789', 'Avenida da Saï¿½de, 789', 'RJ', 'Rio de Janeiro',
     2, '8765432', '87654321'
 );
 
@@ -105,7 +105,7 @@ INSERT INTO T_VGS_UNIDADE (
     nom_unidade, des_telefone_unidade, des_email_unidade, 
     des_senha, des_endereco_unidade, des_estado, des_cidade, 
     id_tipo, des_CNES, des_cep_unidade) VALUES (
-    'Clínica Cardiológica do Coração Feliz', '8199888777', 'clinica.coracao@example.com',
+    'Clï¿½nica Cardiolï¿½gica do Coraï¿½ï¿½o Feliz', '8199888777', 'clinica.coracao@example.com',
     'coracao123', 'Avenida Santa Clara, 222', 'PE', 'Recife',
     5, '9876543', '09368250'
 );
@@ -115,7 +115,7 @@ INSERT INTO T_VGS_UNIDADE (
 --Insere os medicos na coluna T_VGS_MEDICO 
 
 INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
-    VALUES ('Dr. João', 'Infectologia', 'SP123456', '11987654321', 1, 'joao@gmail.com', '123456joao');
+    VALUES ('Dr. Joï¿½o', 'Infectologia', 'SP123456', '11987654321', 1, 'joao@gmail.com', '123456joao');
 INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone,id_unidade, des_email, des_senha) 
     VALUES ( 'Dr. Ana', 'Ginecologia', 'RJ789012', '21987654321', 2, 'ana@hotmail.com', 'senhaAna789');
 INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, id_unidade, des_email, des_senha) 
@@ -151,11 +151,12 @@ INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, 
 INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
     VALUES ('Dra. Camila Lima', 'Ginecologia', 'SP345678', '11996677800', 'camila.lima@gmail.com', 'senhaLima112', 1);
 INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
-    VALUES ('Dr. João Silva', 'Infectologia', 'SP468352', '1143425235', 'joao.silva@outlook.com', 'senha123', 1);
+    VALUES ('Dr. Joï¿½o Silva', 'Infectologia', 'SP468352', '1143425235', 'joao.silva@outlook.com', 'senha123', 1);
 INSERT INTO T_VGS_MEDICO (nom_medico, des_especialidade, num_crm, des_telefone, des_email, des_senha, id_unidade)
     VALUES ('Dra. Maria Oliveira', 'Infectologia', 'SP219843', '9976568785', 'maria.oliveira@outlook.com', 'senha456', 8);
 
-commit;
+-- Commit para efetivar as insercoes na tabela
+COMMIT;
 
 
 

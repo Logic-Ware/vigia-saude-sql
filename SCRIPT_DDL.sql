@@ -2,6 +2,8 @@
 DROP TABLE T_VGS_MEDICO;
 DROP TABLE T_VGS_UNIDADE;
 DROP TABLE T_VGS_TIPO_UNIDADE;
+DROP TABLE T_VGS_DOENCA;
+DROP TABLE T_VGS_CASOS;
 
 --------------------------------- MEDICO   
 CREATE TABLE T_VGS_TIPO_UNIDADE (
@@ -25,7 +27,7 @@ CREATE TABLE T_VGS_UNIDADE(
     id_tipo NUMBER(9) NOT NULL,
     PRIMARY KEY(id_unidade)
 );
---altera a tabela adicionando uma restrição a tabela pai
+-- Altera a tabela adicionando uma restricao a tabela pai
 ALTER TABLE T_VGS_UNIDADE ADD CONSTRAINT fk_unidade_tipo_unidade 
 FOREIGN KEY (id_tipo) REFERENCES T_VGS_TIPO_UNIDADE (id_tipo);
 
@@ -41,10 +43,37 @@ CREATE TABLE T_VGS_MEDICO(
     id_unidade NUMBER(9) NOT NULL,
     PRIMARY KEY (id_medico)    
 );
---altera a tabela adicionando uma restrição a tabela pai
+-- Altera a tabela adicionando uma restricao a tabela pai
 ALTER TABLE T_VGS_MEDICO ADD CONSTRAINT fk_medico_unidade 
 FOREIGN KEY (id_unidade) REFERENCES T_VGS_UNIDADE (id_unidade);
 
+--------------------------DOENCA
+CREATE TABLE T_VGS_DOENCA(
+    id_doenca NUMBER(9) GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+    nom_doenca VARCHAR2(120) NOT NULL,
+    cod_cid_doenca VARCHAR2(2) NOT NULL,
+    des_sintomas VARCHAR2(300),
+    num_taxa_transmissao NUMBER(1),
+    num_taxa_letalidade NUMBER(1) NOT NULL,
+    PRIMARY KEY (id_doenca)
+);
+
+--------------------------CASOS
+CREATE TABLE T_VGS_CASOS(
+    id_caso NUMBER(9) GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT BY 1),
+    dat_nasc_paciente DATE NOT NULL,
+    des_genero_paciente VARCHAR2(30) NOT NULL,
+    dat_diagnostico DATE NOT NULL,
+    des_estado_diagnostico VARCHAR2(2) NOT NULL,
+    id_doenca NUMBER(9) NOT NULL,
+    PRIMARY KEY (id_caso)    
+);
+-- Altera a tabela adicionando uma restricao a tabela pai
+ALTER TABLE T_VGS_CASOS ADD CONSTRAINT fk_casos_doenca 
+FOREIGN KEY (id_caso) REFERENCES T_VGS_DOENCA (id_doenca);
+
+-- Commit para efetivar as criacoes de tabela
+COMMIT;
 
 
 
