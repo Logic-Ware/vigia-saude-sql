@@ -70,7 +70,7 @@ CREATE TABLE T_VGS_CASOS(
 );
 -- Altera a tabela adicionando uma restricao a tabela pai
 ALTER TABLE T_VGS_CASOS ADD CONSTRAINT fk_casos_doenca 
-FOREIGN KEY (id_caso) REFERENCES T_VGS_DOENCA (id_doenca);
+FOREIGN KEY (id_doenca) REFERENCES T_VGS_DOENCA (id_doenca);
 
 -- Commit para efetivar as criacoes de tabela
 COMMIT;
